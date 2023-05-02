@@ -17,7 +17,10 @@ cursor = connection.cursor()
 #cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', ["94"])
 
 # Query myown 1
-cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Jimi Hendrix"])
+# cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Jimi Hendrix"])
+
+# Query myown 2
+cursor.exectue('SELECT * FROM "Artist" WHERE "Track" = %s, ')
 
 # fetch the results (multiple)
 results = cursor.fetchall()
